@@ -17,8 +17,8 @@ namespace BoxField
 
         //used to draw boxes on screen
         SolidBrush boxBrush = new SolidBrush(Color.White);
-                
-        List<Box> boxes = new List<Box>();
+        
+        //TODO - create a list to hold a column of boxes        
 
 
         public GameScreen()
@@ -31,7 +31,7 @@ namespace BoxField
         /// </summary>
         public void OnStart()
         {
-
+            //TODO - set game start values
         }
 
         private void GameScreen_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -104,12 +104,18 @@ namespace BoxField
 
         private void gameLoop_Tick(object sender, EventArgs e)
         {
+            //TODO - update location of all boxes (drop down screen)
+
+            //TODO - remove box if it has gone of screen
+
+            //TODO - add new box if it is time
+
             Refresh();
         }
 
         private void GameScreen_Paint(object sender, PaintEventArgs e)
         {
-            //draw boxes to screen
+            //TODO - draw boxes to screen
         }
     }
 }

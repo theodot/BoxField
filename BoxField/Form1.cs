@@ -19,6 +19,7 @@ namespace BoxField
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Program goes directly to the GameScreen method on start
             GameScreen gs = new GameScreen();
             this.Controls.Add(gs);
         }
