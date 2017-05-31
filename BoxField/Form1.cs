@@ -17,8 +17,6 @@ namespace BoxField
             InitializeComponent();
         }
 
-        //lets pretend that this is now a complete program
-
         private void Form1_Load(object sender, EventArgs e)
         {
             // Program goes directly to the GameScreen method on start
