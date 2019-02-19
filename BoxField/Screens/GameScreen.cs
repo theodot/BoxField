@@ -12,8 +12,8 @@ namespace BoxField
 {
     public partial class GameScreen : UserControl
     {
-        //player1 button control keys - DO NOT CHANGE
-        Boolean leftArrowDown, downArrowDown, rightArrowDown, upArrowDown, bDown, nDown, mDown, spaceDown;
+        //player1 button control keys
+        Boolean leftArrowDown, rightArrowDown;
 
         //used to draw boxes on screen
         SolidBrush boxBrush = new SolidBrush(Color.White);
@@ -42,29 +42,9 @@ namespace BoxField
                 case Keys.Left:
                     leftArrowDown = true;
                     break;
-                case Keys.Down:
-                    downArrowDown = true;
-                    break;
                 case Keys.Right:
                     rightArrowDown = true;
-                    break;
-                case Keys.Up:
-                    upArrowDown = true;
-                    break;
-                case Keys.B:
-                    bDown = true;
-                    break;
-                case Keys.N:
-                    nDown = true;
-                    break;
-                case Keys.M:
-                    mDown = true;
-                    break;
-                case Keys.Space:
-                    spaceDown = true;
-                    break;
-                default:
-                    break;
+                    break;           
             }
         }
 
@@ -76,28 +56,8 @@ namespace BoxField
                 case Keys.Left:
                     leftArrowDown = false;
                     break;
-                case Keys.Down:
-                    downArrowDown = false;
-                    break;
                 case Keys.Right:
                     rightArrowDown = false;
-                    break;
-                case Keys.Up:
-                    upArrowDown = false;
-                    break;
-                case Keys.B:
-                    bDown = false;
-                    break;
-                case Keys.N:
-                    nDown = false;
-                    break;
-                case Keys.M:
-                    mDown = false;
-                    break;
-                case Keys.Space:
-                    spaceDown = false;
-                    break;
-                default:
                     break;
             }
         }
