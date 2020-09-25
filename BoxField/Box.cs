@@ -32,5 +32,18 @@ namespace BoxField
             y += speed;
         }
 
+        public void Move(int speed, string direction)
+        {
+            //true represents right
+            if (direction=="right")
+            {
+                x += speed;
+            }
+            else
+            {
+                x -= speed;
+            }
+        }
+
     }
 }
